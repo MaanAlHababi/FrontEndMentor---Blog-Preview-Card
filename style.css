@@ -1,0 +1,86 @@
+:root {
+    --primary-yellow: hsl(47, 88%, 63%);
+    --whity: hsl(0, 0%, 100%);
+    --proper-gray: hsl(0, 0%, 50%);
+    --blackish: hsl(0, 0%, 7%);
+}
+
+@font-face {
+    font-family: 'FigTree';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: var(--primary-yellow);
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--whity);
+    padding: 32px;
+    border-radius: 48px;
+    box-shadow: 8px 12px 0;
+    border: solid 1px black;
+    width: 95%;
+    max-width: 400px;
+    text-align: center;
+    font-family: 'FigTree';
+}
+
+.illustration {
+    width: 100%;
+    border-radius: 24px;   
+}
+
+.card-body {
+    text-align: left;
+}
+
+.category {
+    font-weight: 800;
+    background-color: var(--primary-yellow);
+    width: 20%;
+    text-align: center;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.blog-title a{
+    text-decoration: none;
+    color: var(--blackish);
+    transition: 0.4s;
+}
+
+.blog-title a:hover {
+    color: var(--primary-yellow)
+}
+
+.description {
+    color: lightgray;
+    font-size: 20px;
+}
+
+.author {
+    display: flex;
+}
+
+.author-name {
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+}
+
+.attribution a {
+    color: var(--whity);
+}
